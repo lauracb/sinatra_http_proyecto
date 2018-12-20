@@ -1,0 +1,113 @@
+body {
+    padding: 30px 20px 20px 600px;
+    width: 640px;
+    font-family: comic sans-serif;
+    background: url("https://cdn.oboi7.com/content/images/30/3b/303b41c6461cbebc85983edc836cb19101dea014.jpg") center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    font-size:18px;
+    color: #696969;
+  }
+
+h1 {
+    font-size: 32px;
+    font-family: fantasy;
+    color: rgb(58, 143, 96);
+    font-weight: bold;
+    text-align: center;
+  }
+
+h2 {
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(153, 192, 170);
+    font-style: italic;
+    text-align: center;
+  }
+
+h3{
+  font-size: 20px;
+  font-family: comic sans-serif;
+  color: DarkGoldenRod;
+  text-align: left;
+}
+
+footer{
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(153, 192, 170);
+  font-style: italic;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+}
+
+textarea {
+    height: 30px;
+    width: 410px;
+    padding: 10px;
+    border: 1px solid rgb(243, 221, 221);
+    align-items: center;
+    background: rgb(240, 241, 239);
+  }
+
+.boton_delete{
+    font-size:10px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:white;
+    background-color: #FFA07A;
+    border:0px;
+    width:80px;
+    height:19px;
+      border-radius: 4px;
+   }
+
+.boton_complete{
+       font-size:10px;
+       font-family:Verdana,Helvetica;
+       font-weight:bold;
+       color:white;
+       background-color: #FFA07A;
+       border:0px;
+       width:80px;
+       height:19px;
+        border-radius: 4px;
+      }
+
+.boton_create{
+  font-size:15px;
+  font-family:Verdana,Helvetica;
+  font-weight:bold;
+    height: 30px;
+    width: 90px;
+    margin: 20px 0 0;
+    border: 1px solid rgb(162, 190, 154);
+    background:rgb(228, 238, 221);
+    border-radius:4px;
+  }
+
+.hecho{
+  font: Verdana, Helvetica;
+  font-style: italic;
+  font-size:15px;
+  font-weight:bold;
+    padding: 5px;
+    height: 10px;
+    font-weight: 50px;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #20B2AA;
+    border-radius: 4px;
+    border: 2px solid #20B2AA;
+}
+
+
+table, th, td {
+   border-collapse: collapse;
+   padding: 5px; /*Agrega espacio interno en las celdas*/
+   box-align: center;
+   text-align: center;
+}

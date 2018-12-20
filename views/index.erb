@@ -1,0 +1,34 @@
+<%# Formulario para crear las nuevas tareas%>
+
+<section id="add">
+    <form class="" action="/" method="post">
+        <textarea name="content" rows="8" cols="30" placeholder="Add your task here"></textarea>
+        <input type="submit" value="Add Task!" class="boton_create">
+    </form>
+</section>
+
+<%# Formulario para eliminar y seleccionar si una tarea está completada%>
+<h3>LIST OF TASKS:</h3>
+<% @task.each do |elemento| %>
+    <table>
+        <tr>
+            <ul>
+                <td><li><%=elemento["title"]%></li></td>
+                    <% if elemento["done"]==false %>
+                        <form class="" action="/update/<%=elemento["id"]%>" method="post">
+                            <input type="hidden" name="_method" value="put">
+                            <td><input type="submit" value="Complete" class="boton_complete"></td>
+                        </form>
+                    <% else %>
+                        <td><div class="hecho">Done!</div></td>
+                    <% end %>
+
+                    <p><form class="" action="/delete/<%=elemento["id"]%>" method="post">
+                        <input type="hidden" name="_method" value="delete">
+                        <td><input type="submit" value="Delete" class="boton_delete"></td>
+                    </form></p>
+            </ul>
+            <td></td>
+        </tr>
+    </table>
+<% end %>
